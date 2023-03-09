@@ -3,23 +3,44 @@ log:
   level: debug
 
 gitlab:
-  url: https://gitlab.com
-  token: <your_token>
+  url: https://gitlab.tecsysrd.cloud
+  token: jcrYd3Z2sBEqs1yxCxHZ
+  maximum_requests_per_second: 1
 
-# Pull jobs related metrics on all projects
+pull:
+  projects_from_wildcards:  
+    on_init: true
+
+
 project_defaults:
   pull:
+    environments:
+      enabled: false
+      exclude_stopped: false
+    refs:
+      branches:
+        enabled: true
+        regexp: ".*"
+        most_recent: 0
+        max_age_seconds: 15780000
+      tags:
+        most_recent: 0
+        max_age_seconds: 15780000
+      merge_requests:
+        enabled: false
     pipeline:
       jobs:
-        enabled: true
+        enabled: false
 
-# Example public projects to monitor
+        from_child_pipelines:
+          enabled: true
+
+
 projects:
-  - name: gitlab-org/gitlab-runner
-    # Pull environments related metrics prefixed with 'stable' for this project
-    pull:
-      environments:
-        enabled: true
-        name_regexp: '^stable.*'
+  - name: k8s-infra/tecsys-infra
+  - name: k8s-infra/tecsys-infra-keycloak
+  - name: k8s-infra/tecsys-infra-docker
+  - name: k8s-infra/tecsys-infra-microservices
+  - name: k8s-infra/tecsys-infra-tests
+  - name: devops/tecsys-gitlab-ci
 
-  - name: gitlab-org/charts/auto-deploy-app

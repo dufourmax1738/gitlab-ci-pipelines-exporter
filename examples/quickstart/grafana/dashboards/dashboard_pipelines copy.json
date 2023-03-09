@@ -783,7 +783,7 @@
               },
               {
                 "id": "custom.width",
-                "value": 70
+                "value": 85
               }
             ]
           },
@@ -840,7 +840,7 @@
               },
               {
                 "id": "custom.width",
-                "value": 180
+                "value": 218
               }
             ]
           },
@@ -852,7 +852,7 @@
             "properties": [
               {
                 "id": "custom.width",
-                "value": 70
+                "value": 98
               }
             ]
           },
@@ -864,7 +864,7 @@
             "properties": [
               {
                 "id": "custom.width",
-                "value": 100
+                "value": 122
               }
             ]
           },
@@ -1089,7 +1089,7 @@
               },
               {
                 "id": "custom.width",
-                "value": 70
+                "value": 85
               }
             ]
           },
@@ -1252,7 +1252,7 @@
               },
               {
                 "id": "custom.width",
-                "value": 180
+                "value": 218
               }
             ]
           },
@@ -1264,7 +1264,7 @@
             "properties": [
               {
                 "id": "custom.width",
-                "value": 70
+                "value": 98
               }
             ]
           },
@@ -1276,7 +1276,7 @@
             "properties": [
               {
                 "id": "custom.width",
-                "value": 100
+                "value": 122
               }
             ]
           },
@@ -1446,8 +1446,8 @@
       {
         "current": {
           "selected": false,
-          "text": "gitlab.tecsysrd.cloud",
-          "value": "gitlab.tecsysrd.cloud"
+          "text": "gitlab.com",
+          "value": "gitlab.com"
         },
         "error": null,
         "hide": 2,
@@ -1456,11 +1456,11 @@
         "options": [
           {
             "selected": true,
-            "text": "gitlab.tecsysrd.cloud",
-            "value": "gitlab.tecsysrd.cloud"
+            "text": "gitlab.com",
+            "value": "gitlab.com"
           }
         ],
-        "query": "gitlab.tecsysrd.cloud",
+        "query": "gitlab.com",
         "skipUrlSync": false,
         "type": "constant"
       },
